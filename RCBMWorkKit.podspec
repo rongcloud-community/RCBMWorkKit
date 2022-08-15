@@ -1,0 +1,23 @@
+Pod::Spec.new do |s|
+  s.name = "RCBMWorkKit"
+  s.version = "0.1.0"
+  s.summary = "RCBMWorkKit."
+  s.license = {"type"=>"MIT", "file"=>"LICENSE"}
+  s.authors = {"asunrong"=>"gongjiahao@rongcloud.cn"}
+  s.homepage = "https://gitee.com/rcbm/rcbm-ios-workbench-kit.git"
+  s.description = "RCBMWorkKit description introduction \u5DE5\u4F5C\u53F0kit"
+  s.source = { :git => 'https://github.com/rongcloud-community/RCBMWorkKit.git', :tag => s.version.to_s }
+
+
+  s.ios.deployment_target    = '9.0'
+  s.ios.vendored_frameworks   = 'ios/RCBMWorkKit.framework' , 'ios/openssl.framework'
+  s.public_header_files = 'ios/RCBMWorkKit.framework/Versions/A/Headers/RCBMWorkKitConfig.h'
+  s.resource = 'ios/RCBMWorkKit.framework/Versions/A/Resources/RCBMDefaultTheme.bundle'
+  
+  s.dependency 'AFNetworking', '~> 3.2.1'
+  s.dependency 'YYKit','~> 1.0.9'
+  s.dependency 'Masonry', '~> 1.1.0'
+  s.dependency 'SDWebImage', '~> 5.8.0'
+#  s.dependency 'FMDB', '~> 2.7.5'
+  s.dependency 'SSZipArchive', '~> 2.4.3'
+end
