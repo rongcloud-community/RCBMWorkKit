@@ -8,12 +8,16 @@ Pod::Spec.new do |s|
   s.description = "RCBMWorkKit description introduction \u5DE5\u4F5C\u53F0kit"
   s.source = { :git => 'https://github.com/rongcloud-community/RCBMWorkKit.git', :tag => s.version.to_s }
 
-
+ 
   s.ios.deployment_target    = '9.0'
   s.ios.vendored_frameworks   = 'ios/RCBMWorkKit.framework' , 'ios/openssl.framework'
-  s.public_header_files = 'ios/RCBMWorkKit.framework/Versions/A/Headers/RCBMWorkKitConfig.h'
+# s.public_header_files = 'ios/RCBMWorkKit.framework/Versions/A/Headers/RCBMWorkKitConfig.h'
   s.resource = 'ios/RCBMWorkKit.framework/Versions/A/Resources/RCBMDefaultTheme.bundle'
-  
+  s.pod_target_xcconfig = {
+    'VALID_ARCHS' => 'arm64 x86_64',
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
+    'ENABLE_BITCODE' => 'NO'
+  }
   s.dependency 'AFNetworking', '~> 3.2.1'
   s.dependency 'YYKit','~> 1.0.9'
   s.dependency 'Masonry', '~> 1.1.0'
