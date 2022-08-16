@@ -10,9 +10,10 @@ Pod::Spec.new do |s|
 
  
   s.ios.deployment_target    = '9.0'
-  s.ios.vendored_frameworks   = 'ios/RCBMWorkKit.framework' , 'ios/openssl.framework'
-# s.public_header_files = 'ios/RCBMWorkKit.framework/Versions/A/Headers/RCBMWorkKitConfig.h'
-  s.resource = 'ios/RCBMWorkKit.framework/Versions/A/Resources/RCBMDefaultTheme.bundle'
+# s.ios.vendored_frameworks   = 'ios/RCBMWorkKit.framework' , 'ios/openssl.framework'
+  s.ios.vendored_framework   = 'ios/RCBMWorkKit.xcframework'
+  # s.public_header_files = 'ios/RCBMWorkKit.framework/Versions/A/Headers/RCBMWorkKitConfig.h'
+  s.resource = 'ios/RCBMDefaultTheme.bundle'
   s.pod_target_xcconfig = {
     'VALID_ARCHS' => 'arm64 x86_64',
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
