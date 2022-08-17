@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/RCBMHomePageViewController.h</key>
+		<data>
+		8PU7T/EzhZwfzImnXemje9XjzDw=
+		</data>
 		<key>Headers/RCBMWorkKitConfig.h</key>
 		<data>
 		ssqQoUGqmOAUt7CZrmn92c9AD54=
@@ -2344,7 +2348,7 @@
 		<data>
 		6MORHb3VjEfkC13alK0ntF9ApuU=
 		</data>
-		<key>RCBMDefaultTheme.bundle/string/en.lproj/RCEDefaultTheme.strings</key>
+		<key>RCBMDefaultTheme.bundle/string/en.lproj/RCBMDefaultTheme.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -2353,7 +2357,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>RCBMDefaultTheme.bundle/string/zh-Hans.lproj/RCEDefaultTheme.strings</key>
+		<key>RCBMDefaultTheme.bundle/string/zh-Hans.lproj/RCBMDefaultTheme.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -2369,6 +2373,17 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/RCBMHomePageViewController.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8PU7T/EzhZwfzImnXemje9XjzDw=
+			</data>
+			<key>hash2</key>
+			<data>
+			WP6f/XexojliHzKD0Vvwo9W1M6UABabiXkWxMVCUV4g=
+			</data>
+		</dict>
 		<key>Headers/RCBMWorkKitConfig.h</key>
 		<dict>
 			<key>hash</key>
@@ -8793,7 +8808,7 @@
 			355o+QfszsRaUJvjFrbc400YJDRmLggjV7kMP8RG6MY=
 			</data>
 		</dict>
-		<key>RCBMDefaultTheme.bundle/string/en.lproj/RCEDefaultTheme.strings</key>
+		<key>RCBMDefaultTheme.bundle/string/en.lproj/RCBMDefaultTheme.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -8806,7 +8821,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>RCBMDefaultTheme.bundle/string/zh-Hans.lproj/RCEDefaultTheme.strings</key>
+		<key>RCBMDefaultTheme.bundle/string/zh-Hans.lproj/RCBMDefaultTheme.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
