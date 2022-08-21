@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="00: git_pull" time="8.038413">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="01: ensure_git_branch" time="0.019589">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="02: version_bump_podspec" time="0.001298">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="03: git_add" time="0.024048">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="04: git_commit" time="0.048289">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="05: push_to_git_remote" time="3.898717">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="06: git_tag_exists" time="0.02194">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="07: remove_git_tag" time="4.006134">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="08: add_git_tag" time="0.024685">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="09: push_git_tags" time="3.895345">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="10: cd /Users/dev/Documents/rc_work/work_codes/gitee/Release_RCBMWorkKit &amp;&amp; pod lib lint RCBMWorkKit.podspec --no-clean --allow-warnings  --skip-import-validation" time="2.303508">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>
