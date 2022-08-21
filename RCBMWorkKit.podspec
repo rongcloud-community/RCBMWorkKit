@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.summary = "RCBMWorkKit."
   s.license = {"type"=>"MIT", "file"=>"LICENSE"}
   s.authors = {"asunrong"=>"gongjiahao@rongcloud.cn"}
-  s.homepage = "https://gitee.com/rcbm/rcbm-ios-workbench-kit.git"
+  s.homepage = "https://github.com/rongcloud-community/RCBMWorkKit.git"
   s.description = "RCBMWorkKit description introduction \u5DE5\u4F5C\u53F0kit"
   s.source = { :git => 'https://github.com/rongcloud-community/RCBMWorkKit.git', :tag => s.version.to_s }
 
