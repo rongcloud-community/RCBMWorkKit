@@ -36,12 +36,12 @@ lane :release_pod do |options|
   end
   add_git_tag(tag: target_version)
   push_git_tags
-# pod_lib_lint(allow_warnings: true)
-# pod_push(path: spec_path, allow_warnings: true)
+  pod_lib_lint(allow_warnings: true,no_clean:true,skip_import_validation:true)
+  pod_push(path: spec_path, allow_warnings: true,skip_import_validation:true)
 
-  current_path = File.expand_path("..")
-  sh "cd #{current_path} && pod lib lint #{spec_path.to_s.chomp} --no-clean --allow-warnings  --skip-import-validation"
-  sh "cd #{current_path} && pod trunk push #{spec_path.to_s.chomp}  --allow-warnings  --skip-import-validation"
+# current_path = File.expand_path("..")
+# sh "cd #{current_path} && pod lib lint #{spec_path.to_s.chomp} --no-clean --allow-warnings  --skip-import-validation"
+# sh "cd #{current_path} && pod trunk push #{spec_path.to_s.chomp}  --allow-warnings  --skip-import-validation"
   
   UI.message("Release lib #{target_project} new version #{target_version} to CocoaPods/Specs Successfully! 🎉 ")
 end
