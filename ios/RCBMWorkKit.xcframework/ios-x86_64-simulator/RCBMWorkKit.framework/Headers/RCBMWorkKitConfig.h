@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
+#import "RCBMPrepareWorkParmsDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -76,6 +76,10 @@ typedef void (^HXAuthCallBack)(BOOL isSuccess);
 /// 返回初始化 工作台VC
 /// @param isTabBarImpot  是否是tabbar 接入
 +(UIViewController *)genWorkBenchHomeVC:(BOOL)isTabBarImpot;
+
+/// server重试代理
+/// @param delegateObject 设置代理
++ (void)setPrepareWorkParmsDelegate:(id)delegateObject;
 @end
 
 NS_ASSUME_NONNULL_END

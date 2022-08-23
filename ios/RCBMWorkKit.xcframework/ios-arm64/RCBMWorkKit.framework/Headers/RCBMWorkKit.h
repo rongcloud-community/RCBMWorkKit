@@ -13,5 +13,6 @@
 
 #import "RCBMWorkKitConfig.h"
 #import "RCBMHomePageViewController.h"
+#import "RCBMPrepareWorkParmsDelegate.h"
 
 #endif /* RCBMWorkKit_h */
