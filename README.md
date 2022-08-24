@@ -39,6 +39,24 @@ pod 'RCBMWorkKit', '~> 0.1.0'
     [RCBMWorkKitConfig prepareWorkKitParms:KdataApplicationKey anddataAuthorization:KdataAuthorizationKey andsm2PublicKey:Ksm2PublicKey];
 
 ```
+📢: 这里需要特别注意,如果server端 提供参数接口,则需要在其接口的成功回调中调用:实现`prepareWorkParmByServer:`代理方法
+```Objective-C
+//在 APPDelegate中 遵守 <RCBMPrepareWorkParmsDelegate> 协议
+// 在- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions 中或者项目中初始化三方SDK方法中
+// 工作台 设置代理
+[RCBMWorkKitConfig setPrepareWorkParmsDelegate:self];
+#pragma RCBMPrepareWorkParmsDelegate Method
+- (void)prepareWorkParmByServer:(void (^)(BOOL isSuccess))callBack{
+/*
+这里请求接口处理
+//FIXME: 接口API 接口成功则进行正常初始化后
+*/
+[RCBMWorkKitConfig prepareWorkKitParms:KdataApplicationKey anddataAuthorization:KdataAuthorizationKey andsm2PublicKey:Ksm2PublicKey];
+//    [RCBMWorkKitConfig prepareWorkKitParmsAppID:KAppId appKey:KAppKey appSecret:KAppSecret andsm2PublicKey:Ksm2PublicKey];
+//开启打印网络交互日志
+[RCBMWorkKitConfig enableNetLog:YES];
+}
+```
 
 2. 是否打印网络交互日志(可选)
 
