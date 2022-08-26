@@ -1,0 +1,6 @@
+framework module RCBMWorkKit {
+  umbrella header "RCBMWorkKit.h"
+
+  export *
+  module * { export * }
+}
