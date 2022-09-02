@@ -17,6 +17,21 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef void (^HXAuthCallBack)(BOOL isSuccess);
 
+#pragma mark - V3 根据新的API调整
+/**
+ * v3前置授权
+ * @param authToken  认证tokn/cookie
+ * @param callBack  成功或失败回调
+ */
++(void)prepardWorkKitAuth:(NSString *)authToken
+                          callBack:(HXAuthCallBack)callBack;
+
+/// v3重新授权宏信
+/// @param callBack 授权宏信完成回调
++(void)repeatWorkAuth:(HXAuthCallBack)callBack;
+
+
+
 #pragma mark - V2 根据新的API调整
 
 /**
@@ -30,6 +45,7 @@ typedef void (^HXAuthCallBack)(BOOL isSuccess);
     andDataAuthorization:(NSString * )dataAuthorizationKey
          andSm2PublicKey:(NSString *)sm2PublicKey
               andServerHost:(NSString *)serverHostKey;
+
 
 /**
  * v2前置授权

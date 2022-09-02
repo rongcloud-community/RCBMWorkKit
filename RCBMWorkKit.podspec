@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "RCBMWorkKit"
-  s.version = "0.3.4"
+  s.version = "0.3.8"
   s.summary = "RCBMWorkKit."
   s.license = {"type"=>"MIT", "file"=>"LICENSE"}
   s.authors = {"asunrong"=>"gongjiahao@rongcloud.cn"}
